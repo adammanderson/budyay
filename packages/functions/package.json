@@ -1,0 +1,30 @@
+{
+  "name": "@budyay/functions",
+  "version": "0.0.1",
+  "private": true,
+  "description": "",
+  "engines": {
+    "node": "10"
+  },
+  "scripts": {
+    "copy-deps": "cpx package.json ../../dist/functions -C",
+    "build": "tsc && yarn run copy-deps"
+  },
+  "author": "Adam Anderson",
+  "license": "ISC",
+  "dependencies": {
+    "firebase-admin": "8.10.0",
+    "firebase-functions": "3.6.0",
+    "next": "9.3.4",
+    "react": "16.13.1",
+    "react-dom": "16.13.1"
+  },
+  "devDependencies": {
+    "@types/next": "^9.0.0",
+    "@types/node": "12.11.1",
+    "@types/react": "16.9.34",
+    "@types/react-dom": "16.9.6",
+    "cpx": "1.5.0",
+    "typescript": "3.8.3"
+  }
+}
