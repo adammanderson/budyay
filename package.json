@@ -12,8 +12,10 @@
     "dev": "lerna exec yarn dev",
     "build": "lerna exec yarn build",
     "dev:pwa": "yarn dev --scope @budyay/pwa",
-    "build:pwa": "yarn build --scope @budyay/pwa",
+    "dev:ui": "lerna exec yarn start-storybook --scope @budyay/ui",
     "build:functions": "yarn build --scope @budyay/functions",
+    "build:pwa": "yarn build --scope @budyay/pwa",
+    "build:ui": "lerna exec yarn build-storybook --scope @budyay/ui",
     "build:all": "yarn run build:pwa && yarn run build:functions",
     "predeploy": "rimraf dist/ && yarn run build:all",
     "deploy": "cross-env NODE_ENV=production firebase deploy --only functions,hosting --debug"

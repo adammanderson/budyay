@@ -8,6 +8,11 @@
     "plugin:react/recommended",
     "plugin:@typescript-eslint/recommended"
   ],
+  "globals": {
+    "describe": true,
+    "it": true,
+    "expect": true
+  },
   "rules": {
     "@typescript-eslint/no-explicit-any": [
       "error"
