@@ -3,6 +3,7 @@ const heading = {
   mb: 3,
   color: 'heading',
   fontWeight: 'bold',
+  lineHeight: '1.3em',
 };
 
 const hugeHeading = {
@@ -28,7 +29,7 @@ const smallHeading = {
 const baseText = {
   mb: 5,
   fontSize: 0,
-  lineHeight: '1.6em',
+  lineHeight: '1.7em',
 };
 
 const text = {

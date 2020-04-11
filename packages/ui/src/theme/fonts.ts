@@ -14,7 +14,7 @@ const fonts: Theme = {
     '1.3em',
     '1.6em',
     '1.9em',
-    '2.4em',
+    '2em',
   ],
   fontWeights: {
     body: 400,

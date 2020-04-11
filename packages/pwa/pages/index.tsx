@@ -10,7 +10,7 @@ import {
 const Home: React.SFC = () => (
   <Container sx={{ py: 6, px: 4 }}>
     <Box sx={{ pb: 4 }}>
-      <Brand size={140} />
+      <Brand />
     </Box>
     <HugeHeading>
       Connecting buddies to nurture, support, and encourage one another.
