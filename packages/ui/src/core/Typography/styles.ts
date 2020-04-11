@@ -1,6 +1,6 @@
 const heading = {
   m: 0,
-  mb: 2,
+  mb: 3,
   color: 'heading',
   fontWeight: 'bold',
 };
@@ -26,12 +26,9 @@ const smallHeading = {
 };
 
 const baseText = {
-  mb: 3,
+  mb: 5,
   fontSize: 0,
   lineHeight: '1.6em',
-  ':last-of-type': {
-    mb: 0,
-  },
 };
 
 const text = {

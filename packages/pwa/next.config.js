@@ -1,3 +1,14 @@
-module.exports = {
+/* eslint @typescript-eslint/no-var-requires: 0 */
+/* eslint @typescript-eslint/explicit-function-return-type: 0 */
+const withPlugins = require('next-compose-plugins');
+const withTM = require('next-transpile-modules')(['@budyay/ui']);
+
+const nextConfig = {
   distDir: '../../dist/functions/next',
 };
+
+module.exports = withPlugins([
+  [withTM, {
+    transpileModules: ['@buyay'],
+  }],
+], nextConfig);

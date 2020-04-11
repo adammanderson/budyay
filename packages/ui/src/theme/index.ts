@@ -14,6 +14,9 @@ const theme: Theme = {
     '2em',
     '4em',
   ],
+  sizes: {
+    container: 800,
+  },
   lineHeights: {
     body: '1.5em',
     heading: '1.3em',

@@ -1,8 +1,10 @@
 const button = {
   display: 'flex',
   alignItems: 'center',
+  justifyContent: 'center',
   px: 4,
   py: 3,
+  mb: 3,
   fontSize: 0,
   fontFamily: 'body',
   fontWeight: 'bold',
