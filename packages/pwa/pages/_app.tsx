@@ -3,6 +3,7 @@ import * as React from 'react';
 import App, { AppInitialProps } from 'next/app';
 import Head from 'next/head';
 import { ThemeProvider } from '@budyay/ui';
+import { GlobalOverlays } from '../components/Overlays';
 
 class BudyayApp extends App {
   static async getInitialProps({ Component, ctx }): Promise<AppInitialProps> {
@@ -30,7 +31,10 @@ class BudyayApp extends App {
           />
         </Head>
         <ThemeProvider>
-          <Component {...pageProps} />
+          <>
+            <GlobalOverlays />
+            <Component {...pageProps} />
+          </>
         </ThemeProvider>
       </>
     );

@@ -19,6 +19,7 @@ const bigHeading = {
 const mediumHeading = {
   ...heading,
   fontSize: 5,
+  mb: 2,
 };
 
 const smallHeading = {
@@ -29,7 +30,7 @@ const smallHeading = {
 const baseText = {
   mb: 5,
   fontSize: 0,
-  lineHeight: '1.7em',
+  lineHeight: '1.6em',
 };
 
 const text = {

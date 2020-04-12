@@ -3569,6 +3569,11 @@
   resolved "https://registry.yarnpkg.com/@types/json-schema/-/json-schema-7.0.4.tgz#38fd73ddfd9b55abb1e1b2ed578cb55bd7b7d339"
   integrity sha512-8+KAKzEvSUdeo+kmqnKrqgeE+LcA0tjYWFY7RPProVYwnqDjukzO+3b6dLD56rYX5TdWejnEOLJYOIeh4CXKuA==
 
+"@types/lodash@^4.14.149":
+  version "4.14.149"
+  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.149.tgz#1342d63d948c6062838fbf961012f74d4e638440"
+  integrity sha512-ijGqzZt/b7BfzcK9vTrS6MFljQRPn5BFWOx8oE0GYxribu6uV+aA9zZuXI1zc/etK9E8nrgdoF2+LgUw7+9tJQ==
+
 "@types/long@^4.0.0":
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/@types/long/-/long-4.0.1.tgz#459c65fa1867dafe6a8f322c4c51695663cc55e9"
@@ -6591,6 +6596,11 @@ date-and-time@^0.13.0:
   resolved "https://registry.yarnpkg.com/date-and-time/-/date-and-time-0.13.1.tgz#d12ba07ac840d5b112dc4c83f8a03e8a51f78dd6"
   integrity sha512-/Uge9DJAT+s+oAcDxtBhyR8+sKjUnZbYmyhbmWjTHNtX7B7oWD8YyYdeXcBRbwSj6hVvj+IQegJam7m7czhbFw==
 
+date-fns@^2.12.0:
+  version "2.12.0"
+  resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-2.12.0.tgz#01754c8a2f3368fc1119cf4625c3dad8c1845ee6"
+  integrity sha512-qJgn99xxKnFgB1qL4jpxU7Q2t0LOn1p8KMIveef3UZD7kqjT3tpFNNdXJelEHhE+rUgffriXriw/sOSU+cS1Hw==
+
 dateformat@^3.0.0:
   version "3.0.3"
   resolved "https://registry.yarnpkg.com/dateformat/-/dateformat-3.0.3.tgz#a6e37499a4d9a9cf85ef5872044d62901c9889ae"
@@ -8247,6 +8257,22 @@ framer-motion@1.7.0:
     popmotion "9.0.0-beta-8"
     style-value-types "^3.1.6"
     stylefire "^7.0.0"
+    tslib "^1.10.0"
+  optionalDependencies:
+    "@emotion/is-prop-valid" "^0.8.2"
+
+framer-motion@^1.10.3:
+  version "1.10.3"
+  resolved "https://registry.yarnpkg.com/framer-motion/-/framer-motion-1.10.3.tgz#d58a57ccb0ccc3317d0fc3abc4da2b3e4227bd43"
+  integrity sha512-VooCzGWg7brSO4Gc0YwpY5AadJe4OPS74ZyOlOHWll5rMXCoOc6Ia3uDQ6RfOJlwCP/D9TQuRGtboyJiVXjVcw==
+  dependencies:
+    "@popmotion/easing" "^1.0.2"
+    "@popmotion/popcorn" "^0.4.2"
+    framesync "^4.0.4"
+    hey-listen "^1.0.8"
+    popmotion "9.0.0-beta-8"
+    style-value-types "^3.1.6"
+    stylefire "^7.0.2"
     tslib "^1.10.0"
   optionalDependencies:
     "@emotion/is-prop-valid" "^0.8.2"
@@ -11558,7 +11584,7 @@ next-transpile-modules@^3.2.0:
     micromatch "^4.0.2"
     slash "^3.0.0"
 
-next@*, next@9.3.4:
+next@*, next@9.3.4, next@^9.3.4:
   version "9.3.4"
   resolved "https://registry.yarnpkg.com/next/-/next-9.3.4.tgz#7860d414ae01e2425bf8038277f1573f9d121b57"
   integrity sha512-sEJ3G6AOdgVYKAsIjpwLEd6uVYKvy1C3JmeydCE1ugrHU14WDRQiklRcr7Syu/aSOfB9/GRU80RPWk2c+xfh0Q==
@@ -13335,7 +13361,7 @@ react-transition-group@^4.3.0:
     loose-envify "^1.4.0"
     prop-types "^15.6.2"
 
-react@16.13.1, react@^16.8.3:
+react@16.13.1, react@^16.13.1, react@^16.8.3:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react/-/react-16.13.1.tgz#2e818822f1a9743122c063d6410d85c1e3afe48e"
   integrity sha512-YMZQQq32xHLX0bz5Mnibv1/LHb3Sqzngu7xstSM+vrkE5Kzr9xE0yMByK5kMoTK30YVJE61WfbxIFFvfeDKT1w==
@@ -14849,7 +14875,7 @@ styled-system@^5.1.5:
     "@styled-system/variant" "^5.1.5"
     object-assign "^4.1.1"
 
-stylefire@^7.0.0:
+stylefire@^7.0.0, stylefire@^7.0.2:
   version "7.0.3"
   resolved "https://registry.yarnpkg.com/stylefire/-/stylefire-7.0.3.tgz#9120ecbb084111788e0ddaa04074799750f20d1d"
   integrity sha512-Q0l7NSeFz/OkX+o6/7Zg3VZxSAZeQzQpYomWmIpOehFM/rJNMSLVX5fgg6Q48ut2ETNKwdhm97mPNU643EBCoQ==

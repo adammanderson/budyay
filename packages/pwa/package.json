@@ -13,6 +13,8 @@
   "license": "ISC",
   "dependencies": {
     "@budyay/ui": "^0.0.1",
+    "@budyay/utils": "^0.0.1",
+    "framer-motion": "^1.10.3",
     "next": "9.3.4",
     "next-compose-plugins": "^2.2.0",
     "next-transpile-modules": "^3.2.0",
