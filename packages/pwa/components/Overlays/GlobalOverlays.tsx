@@ -21,7 +21,7 @@ const GlobalOverlays = (): React.ReactElement => {
     setOverlayVisible(false);
     setTimeout(() => {
       const newUrl = removeUrlParam('overlay', asPath);
-      router.replace(pathname, newUrl, { shallow: true });
+      router.push(pathname, newUrl, { shallow: true });
     }, 500);
   };
 

@@ -1,5 +1,4 @@
 import * as React from 'react';
-import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { Container, Box, Flex } from 'theme-ui';
 import {
@@ -10,34 +9,39 @@ import {
 } from '@budyay/ui';
 
 const Home: React.SFC = () => {
-  const { pathname } = useRouter();
+  const router = useRouter();
+  const { pathname } = router;
 
   return (
-    <Container sx={{ py: 6, px: 4 }}>
-      <Box sx={{ pb: 4 }}>
-        <Brand />
+    <Container>
+      <Box sx={{
+        p: 5,
+        pt: 6,
+      }}
+      >
+        <Brand size={90} />
+        <HugeHeading extendStyle={{ pt: 2 }}>
+          Connecting buddies to nurture, support, and encourage one another.
+        </HugeHeading>
+        <Text>
+          It all starts with an initiative - a mentoring programme at your organisation, a regular
+          team retrospective, or a public initative to offer support in your neighbourhood.
+        </Text>
+        <Flex sx={{ flexDirection: 'column' }}>
+          <Button
+            name="find_initiative"
+          >
+            Find an initiative
+          </Button>
+          <Button
+            variant="outline"
+            name="buddy_code"
+            onClick={(): Promise<boolean> => router.push({ pathname, query: { overlay: 'buddyCode' } })}
+          >
+            I have a buddy code
+          </Button>
+        </Flex>
       </Box>
-      <HugeHeading>
-        Connecting buddies to nurture, support, and encourage one another.
-      </HugeHeading>
-      <Text>
-        It all starts with an initiative - a mentoring programme at your organisation, a regular
-        team retrospective, or a public initative to offer support in your neighbourhood.
-      </Text>
-      <Flex sx={{ flexDirection: 'column' }}>
-        <Button
-          name="find_initiative"
-        >
-          Find an initiative
-        </Button>
-        <Button
-          variant="outline"
-          name="buddy_code"
-        >
-          I have a buddy code
-        </Button>
-        <Link href={{ pathname, query: { overlay: 'buddyCode' } }}>Enter buddy code</Link>
-      </Flex>
     </Container>
   );
 };

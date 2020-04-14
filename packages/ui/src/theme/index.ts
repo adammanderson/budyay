@@ -13,6 +13,7 @@ const theme: Theme = {
     '1.5em',
     '2em',
     '4em',
+    '8em',
   ],
   sizes: {
     container: 800,
